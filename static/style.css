@@ -1,0 +1,45 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Modern gradient */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00e6e6;
+    text-shadow: 0 0 20px rgba(0, 230, 230, 0.6);
+}
+
+/* Seat Number Input - Ensure Text is Visible */
+#seat_number {
+    color: black !important;  /* Text is now visible */
+    background-color: white;
+    font-weight: bold;
+}
+
+/* Glowing Button */
+.btn-primary {
+    background: #00e6e6;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.6);
+}
+
+.btn-primary:hover {
+    background: white;
+    color: #00e6e6;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 230, 230, 1);
+}
