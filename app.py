@@ -10,12 +10,12 @@ def init_db():
     cursor = conn.cursor()
     cursor.execute('''CREATE TABLE IF NOT EXISTS tickets (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        user_id TEXT UNIQUE,
+        user_id INTEGER UNIQUE,
         bus_number TEXT,
         pickup TEXT,
         destination TEXT,
         travel_date TEXT,
-        seat_number TEXT
+        seat_number INTEGER
     )''')
     conn.commit()
     conn.close()
